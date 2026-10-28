@@ -1,449 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sherazi Organization — Premium UI/UX Design Portfolio. Crafting beautiful, user-centered digital experiences." />
+  <meta name="author" content="Sherazi Organization" />
+  <meta name="theme-color" content="#080b18" />
 
-    <title>Sherazi Organization</title>
-    <meta name="description" content="Welcome to Sherazi Organization — committed to excellence, trust and progress.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sherazi Organization — UI/UX Designer Portfolio" />
+  <meta property="og:description" content="Crafting beautiful, user-centered digital experiences." />
+  <meta property="og:type" content="website" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+  <title>Sherazi Organization | UI/UX Designer Portfolio</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-        header {
-            background: #102a43;
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-        header h2 {
-            color: #f0c674;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 8px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #f0c674;
-        }
-
-        .hero {
-            min-height: 85vh;
-            padding: 60px 7%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-            flex-wrap: wrap;
-            background: linear-gradient(135deg, #102a43, #243b53);
-            color: white;
-        }
-
-        .hero-text {
-            flex: 1;
-            min-width: 270px;
-            max-width: 600px;
-        }
-
-        .hero-text h1 {
-            font-size: clamp(34px, 5vw, 54px);
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero-text h1 span {
-            color: #f0c674;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            margin-bottom: 28px;
-            color: #e0e7ef;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #f0c674;
-            color: #102a43;
-            padding: 12px 25px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: white;
-        }
-
-        .portrait {
-            width: 300px;
-            height: 350px;
-            object-fit: cover;
-            object-position: center;
-            border: 5px solid #f0c674;
-            border-radius: 18px;
-            background: #fff;
-        }
-
-        section {
-            padding: 65px 7%;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 32px;
-            color: #102a43;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 17px;
-        }
-
-        .services {
-            background: #eaf0f6;
-        }
-
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-            margin-top: 30px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 28px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-        }
-
-        .service-card h3 {
-            color: #102a43;
-            margin-bottom: 10px;
-        }
-
-        .contact p {
-            margin: 10px 0;
-        }
-
-        footer {
-            background: #102a43;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                justify-content: center;
-                text-align: center;
-            }
-
-            nav {
-                line-height: 2.2;
-            }
-
-            .hero {
-                text-align: center;
-                padding: 45px 6%;
-            }
-
-            .portrait {
-                width: min(280px, 100%);
-                height: 320px;
-            }
-        }
-    </style>
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h2>Sherazi Organization</h2>
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h2>Sherazi Organization</h2>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- HOME SECTION -->
-    <main>
-        <section class="hero" id="home">
-
-            <div class="hero-text">
-                <h1>Welcome to <span>Sherazi Organization</span></h1>
-
-                <p>
-                    Building trust, creating opportunities,
-                    and moving forward with excellence.
-                </p>
-
-                <a href="#about" class="btn">Discover More</a>
-            </div>
-
-            <!-- YOUR PHOTO -->
-            <img
-                src="./portrait.png"
-                alt="Sherazi Organization Portrait"
-                class="portrait"
-            >
-
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="about" id="about">
-            <h2>About Us</h2>
-
-            <p>
-                Welcome to Sherazi Organization. Our aim is to build
-                trust, encourage progress, and provide quality service.
-                We believe in honesty, dedication, teamwork, and
-                creating a positive impact in our community.
-            </p>
-        </section>
-
-        <!-- SERVICES SECTION -->
-        <section class="services" id="services">
-            <h2>Our Services</h2>
-
-            <div class="service-grid">
-
-                <div class="service-card">
-                    <h3>Professional Services</h3>
-                    <p>Reliable support with a focus on quality and trust.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Community Support</h3>
-                    <p>Working towards positive opportunities and progress.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Consultation</h3>
-                    <p>Helping people explore ideas and practical solutions.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-
-            <p>For inquiries, please contact Sherazi Organization.</p>
-
-            <!-- Replace this with your actual email or phone number -->
-            <p>Email: AddYourEmail@example.com</p>
-
-            <a href="mailto:AddYourEmail@example.com" class="btn">
-                Send an Email
-            </a>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>
-            &copy; 2026 Sherazi Organization.
-            All rights reserved.
-        </p>
-    </footer>
-
-</body>
-</html>>
-<body>
-
-  <header class="navbar">
-    <a href="#home" class="logo">SHERAZI <span>ORGANIZATION</span></a>
-    <a href="#contact" class="nav-link">LET'S CONNECT ↗</a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-background">SHERAZI</div>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>
+        Designing Digital<br />
+        Experiences That <span>Convert</span>
+      </h1>
+      <p>
+        Hi, I'm a UI/UX Designer crafting clean, user-centered interfaces
+        for startups and brands. I turn complex ideas into simple,
+        beautiful, and functional products people love to use.
+      </p>
+      <a href="#contact" class="btn">Let's Work Together →</a>
+    </div>
 
-      <div class="hero-content reveal">
-        <p class="eyebrow">CREATIVE · DIGITAL · PURPOSEFUL</p>
-        <h1>Ideas into<br><span>IMPACT.</span></h1>
+    <div class="portrait-container">
+      <img
+        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80"
+        alt="Portrait of the UI/UX Designer"
+        class="portrait"
+        loading="eager"
+      />
+    </div>
+  </section>
 
-        <p class="description">
-          Welcome to Sherazi Organization. We bring ideas to life
-          through creative thinking, thoughtful design and modern
-          digital experiences.
-        </p>
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate UI/UX Designer with 5+ years of experience
+      designing thoughtful digital products. My approach blends
+      research-driven insights with pixel-perfect execution — creating
+      interfaces that are not just beautiful, but deeply intuitive.
+      From wireframes to high-fidelity prototypes, I focus on solving
+      real problems and delivering experiences that users genuinely enjoy.
+    </p>
+  </section>
 
-        <div class="buttons">
-          <a class="btn btn-primary" href="#services">EXPLORE SERVICES ↗</a>
-          <a class="btn btn-outline" href="#about">ABOUT US</a>
-        </div>
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <h2>What I Do</h2>
 
-        <div class="stats">
-          <div><strong>01</strong><small>ONE CLEAR VISION</small></div>
-          <div><strong>360°</strong><small>CREATIVE THINKING</small></div>
-          <div><strong>∞</strong><small>ROOM TO GROW</small></div>
-        </div>
-      </div>
-
-      <div class="hero-image reveal">
-        <div class="portrait-circle"></div>
-        <img src="portrait.png" alt="Sherazi Organization portrait">
-        <span class="image-caption">DESIGNING IDEAS · BUILDING CONNECTIONS</span>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="section-heading reveal">
-        <p class="eyebrow">OUR EXPERTISE</p>
-        <h2>WHAT WE DO<span>.</span></h2>
-        <p>Creative solutions for a modern world.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card reveal">
-          <span class="number">01</span>
-          <div class="service-icon">✳</div>
-          <h3>BRAND IDENTITY</h3>
-          <p>Build a distinctive and memorable brand identity.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="number">02</span>
-          <div class="service-icon">⌘</div>
-          <h3>WEB DESIGN</h3>
-          <p>Create modern, responsive and user-friendly websites.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="number">03</span>
-          <div class="service-icon">◇</div>
-          <h3>CREATIVE DESIGN</h3>
-          <p>Turn your ideas into compelling visual experiences.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="number">04</span>
-          <div class="service-icon">↗</div>
-          <h3>DIGITAL STRATEGY</h3>
-          <p>Plan clear digital experiences with purpose.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section work-section" id="work">
-      <div class="section-heading reveal">
-        <p class="eyebrow">OUR CREATIVE DIRECTION</p>
-        <h2>FEATURED WORK<span>.</span></h2>
-        <p>Sample concepts for the Sherazi Organization portfolio.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project project-one reveal">
-          <span>BRAND CONCEPT / 01</span>
-          <h3>MAKE YOUR<br>MARK.</h3>
-          <p>Brand identity</p>
-        </article>
-
-        <article class="project project-two reveal">
-          <span>DIGITAL CONCEPT / 02</span>
-          <h3>DESIGNED<br>FOR TOMORROW.</h3>
-          <p>Web experience</p>
-        </article>
-
-        <article class="project project-three reveal">
-          <span>CREATIVE CONCEPT / 03</span>
-          <h3>IDEAS THAT<br>CONNECT.</h3>
-          <p>Creative design</p>
-        </article>
-
-        <article class="project project-four reveal">
-          <span>STRATEGY CONCEPT / 04</span>
-          <h3>THINK BIGGER.<br>GO FURTHER.</h3>
-          <p>Digital strategy</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="about-brand reveal">
-        <p class="eyebrow">WHO WE ARE</p>
-        <h2>SHERAZI<br><span>ORGANIZATION.</span></h2>
-        <div class="decorative-line"></div>
-      </div>
-
-      <div class="about-content reveal">
-        <p class="eyebrow">ABOUT US</p>
-        <h2>Thoughtful by design.<br>Ambitious by nature.</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <h3>UI Design</h3>
         <p>
-          Sherazi Organization is built around creativity, ideas and
-          meaningful collaboration. Our aim is to bring clarity to
-          ideas and create work with purpose.
+          Clean, modern interfaces with strong visual hierarchy, balanced
+          typography, and consistent design systems that scale beautifully.
         </p>
-        <ul>
-          <li>Creative thinking</li>
-          <li>Attention to detail</li>
-          <li>Modern approach</li>
-          <li>Continuous improvement</li>
-        </ul>
-      </div>
-    </section>
+      </article>
 
-    <section class="section contact-section" id="contact">
-      <div class="contact-content reveal">
-        <p class="eyebrow">HAVE AN IDEA?</p>
-        <h2>LET'S MAKE<br><span>IT HAPPEN.</span></h2>
+      <article class="service-card">
+        <h3>UX Research</h3>
         <p>
-          Have a project in mind or want to collaborate?
-          Get in touch with Sherazi Organization.
+          User interviews, journey mapping, and usability testing to
+          understand real behavior and make informed design decisions.
         </p>
-        <a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com">
-          CONTACT US ↗
-        </a>
-      </div>
+      </article>
 
-      <div class="contact-card reveal">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <p class="contact-item"><span>✳</span> Sherazi Organization</p>
-        <p class="contact-item"><span>✉</span> YOUR_EMAIL@example.com</p>
-        <p class="contact-note">
-          Replace the example email with your real contact email.
+      <article class="service-card">
+        <h3>Prototyping</h3>
+        <p>
+          Interactive prototypes in Figma to validate ideas fast, gather
+          feedback early, and align stakeholders before development.
         </p>
-      </div>
-    </section>
-  </main>
+      </article>
 
+      <article class="service-card">
+        <h3>Design Systems</h3>
+        <p>
+          Scalable component libraries and guidelines that keep teams
+          consistent and speed up product development dramatically.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>Mobile App Design</h3>
+        <p>
+          iOS and Android interfaces designed for thumb-friendly
+          interactions, accessibility, and delightful micro-interactions.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>Webflow Development</h3>
+        <p>
+          Pixel-perfect, responsive Webflow builds that bring your design
+          to life with smooth animations and clean, semantic markup.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== WORK / PORTFOLIO ========== -->
+  <section class="services" id="work">
+    <h2>Selected Work</h2>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <h3>Fintech Dashboard</h3>
+        <p>
+          A real-time analytics dashboard designed for a fintech startup —
+          improving user retention by 32% through clearer data visualization.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>Health App Redesign</h3>
+        <p>
+          Complete UX overhaul of a wellness mobile app, reducing onboarding
+          drop-off by 45% with a more intuitive, friendly flow.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>E-Commerce Store</h3>
+        <p>
+          A luxury fashion e-commerce experience with a custom checkout
+          flow that boosted conversions and reduced cart abandonment.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <h2>Let's Build Something Great</h2>
+    <p>Have a project in mind? I'd love to hear about it.</p>
+    <p>📧 hello@sheraziorganization.com</p>
+    <p>📍 Available worldwide — remote friendly</p>
+    <a href="mailto:hello@sheraziorganization.com" class="btn">
+      Send Me an Email →
+    </a>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
   <footer>
-    <a href="#home" class="logo">SHERAZI ORGANIZATION</a>
-    <p>© <span id="year"></span> Sherazi Organization. All rights reserved.</p>
-    <a href="#home">BACK TO TOP ↑</a>
+    <p>© 2025 Sherazi Organization. Designed &amp; built with ❤️ by a UI/UX Designer.</p>
   </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    /* ---------- 1. CARD SPOTLIGHT (mouse follow glow) ---------- */
+    document.querySelectorAll('.service-card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+        card.style.setProperty('--my', `${e.clientY - rect.top}px`);
+      });
+    });
+
+    /* ---------- 2. SCROLL REVEAL ---------- */
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document
+      .querySelectorAll('section:not(.hero) h2, .service-card, .about p')
+      .forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1)';
+        revealObserver.observe(el);
+      });
+  </script>
 
 </body>
 </html>
